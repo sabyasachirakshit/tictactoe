@@ -1,6 +1,16 @@
 import "./App.css";
 var p1 = window.prompt("Enter player 1 name:");
 var p2 = window.prompt("Enter player 2 name:");
+while (!p1 || !p2) {
+  window.alert("Player name should not be blank!");
+  p1 = window.prompt("Enter player 1 name:");
+  p2 = window.prompt("Enter player 2 name:");
+}
+while (p1 === p2) {
+  window.alert("Both player's should not be same");
+  p1 = window.prompt("Enter player 1 name:");
+  p2 = window.prompt("Enter player 2 name:");
+}
 function App() {
   // Function called whenever user tab on any box
   function myfunc() {
@@ -390,6 +400,7 @@ function App() {
       <p id="ins">
         Start the game by just clicking on any box
         <br />
+        To start a new game with new players, reload the page
         <br />
         First Player starts as X
         <br />
