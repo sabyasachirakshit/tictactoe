@@ -395,7 +395,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>TIC TAC TOE</h1>
+      <h1>TIC TAC TOE GAME - CREATED BY SABYASACHI RAKSHIT</h1>
 
       <p id="ins">
         Start the game by just clicking on any box
